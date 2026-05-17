@@ -2,10 +2,10 @@
 
 :root {
     --color-primary: #6C9BCF;
-    --color-white: #fff;
+    --color-white: #000000;
     --color-dark: #363949;
     --color-dark-variant: #677483;
-    --color-background: linear-gradient(to right, #033b21, #06294b);
+    --color-background: #ffffff;
 
     --card-border-radius: 1rem;
     --border-radius-1: 0.4rem;
@@ -14,7 +14,7 @@
     --card-padding: 1.1rem 1rem;
     --padding-1: 0.5vw;
 
-    --box-shadow: 0 2rem 3rem var(--color-light);
+    --box-shadow: 0.2rem 0.2rem 1rem var(--color-dark);
 }
 
 
@@ -165,90 +165,6 @@ b {
     grid-template-columns: auto;
 }
 
-aside {
-    display: flex;
-}
-
-aside .toggle {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    margin-top: 1.4rem;
-}
-
-aside .toggle .logo {
-    display: flex;
-    gap: 0.5rem;
-}
-
-aside .toggle .logo img {
-    width: 2rem;
-    height: 2rem;
-}
-
-aside .toggle .close {
-    padding-right: 1rem;
-    display: none;
-}
-
-aside .sidebar {
-    display: flex;
-    flex-direction: column;
-    background-color: var(--color-white);
-    box-shadow: var(--box-shadow);
-    border-radius: 15px;
-    position: relative;
-    width: 100%;
-    transition: all 0.3s ease;
-}
-
-aside .sidebar:hover {
-    box-shadow: none;
-}
-
-aside .sidebar a {
-    display: flex;
-    align-items: center;
-    height: 3.7rem;
-    gap: 1rem;
-    position: relative;
-    margin-left: 2rem;
-    transition: all 0.3s ease;
-}
-
-aside .img-user {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    margin-top: 3vw;
-    margin-bottom: 3vw;
-
-    img {
-        width: 80%;
-    }
-}
-
-header span {
-    font-size: 1.6rem;
-    transition: all 0.3s ease;
-}
-
-aside .sidebar a:last-child {
-    position: absolute;
-    bottom: 2rem;
-    width: 100%;
-}
-
-
-
-aside .sidebar a:hover {
-    color: var(--color-primary);
-}
-
-aside .sidebar a:hover span {
-    margin-left: 0.6rem;
-}
-
 
 
 
@@ -275,7 +191,7 @@ aside .sidebar a:hover span {
 
 
 .analyse>div:hover {
-    box-shadow: none;
+    box-shadow: 0.2rem 0.5rem 1rem var(--color-dark);
 }
 
 
