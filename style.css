@@ -94,10 +94,9 @@ body {
         gap: 1.6rem;
         width: 50%;
 
-        .chart_card{
+        .chart_card {
             height: 17vw;
         }
-   
 
         .line-chart {
             grid-column: span 2;
@@ -112,12 +111,11 @@ body {
             height: 100%;
         }
 
-        iframe{
+        iframe {
             width: 100%;
             height: 95%;
         }
     }
-
 
 }
 
@@ -138,89 +136,13 @@ body {
 @media screen and (max-width: 768px) {
 
     .container {
+
         width: 100%;
         height: 100vh;
         grid-template-columns: 1fr;
-        padding: 0 var(--padding-1);
+        padding: 3vw;
     }
 
-
-    .header {
-        display: flex;
-        justify-content: space-between;
-        padding-top: 3vw;
-        width: 100%;
-        font-size: 1vw;
-
-        h1 {
-            display: none;
-        }
-
-        .datas {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            width: 90%;
-
-            div {
-                display: flex;
-                flex-direction: row;
-                justify-content: space-between;
-                gap: 2vw;
-            }
-
-            label {
-                font-size: 4.5vw;
-            }
-
-            select {
-                background-color: var(--color-white);
-                font-size: 5vw;
-            }
-
-        }
-    }
-
-    table {
-        width: auto;
-        border-collapse: collapse;
-        font-size: 2.5vw;
-    }
-
-    #tabela-movimentacoes {
-        height: auto;
-        line-height: 5vw;
-    }
-
-
-    .hide-mobile {
-        display: none;
-    }
-
-    aside {
-        position: fixed;
-        background-color: var(--color-white);
-        width: 15rem;
-        top: 0;
-        z-index: 3;
-        box-shadow: 1rem 3rem 4rem var(--color-light);
-        height: 100vh !important;
-        left: -100%;
-        display: none;
-        animation: showMenu 0.4s ease forwards;
-    }
-
-
-
-    aside .sidebar {
-        height: 100vh;
-    }
-
-    @keyframes showMenu {
-        to {
-            left: 0;
-        }
-    }
 
     .analyse {
         grid-template-columns: 1fr;
@@ -233,40 +155,46 @@ body {
     }
 
     .charts-container {
+        height: auto;
         display: flex;
+        justify-content: space-between;
         flex-direction: column;
-        width: 100%;
-        margin-bottom: 5vw;
-        margin-top: 3vw;
-    }
+        gap: 1.6rem;
 
-    .chart_card {
-        padding: 3vw;
-        margin-top: 0;
-        height: 35vh;
-    }
+        .first-line {
+            display: flex;
+            flex-direction: column;
+            gap: 1.6rem;
+            width: 100%;
 
-    .chart_card:last-child {
-        padding-top: 0;
-    }
+            .chart_card {
+                height: auto;
+                padding: 3vw;
+                margin-top: 0;
+                height: 35vh;
+            }
 
-    aside .sidebar h3 {
-        display: inline;
-    }
+            .line-chart {
+                height: auto;
+                padding: 3vw;
+                margin-top: 0;
+                height: 35vh;
+            }
+        }
 
-    aside .sidebar a {
-        width: 100%;
-        height: 3.4rem;
-    }
+        .second-line {
+            width: 100%;
+            margin-bottom: 5vw;
 
-    aside .sidebar a:last-child {
-        position: absolute;
-        bottom: 5rem;
-    }
+            .chart_card {
+                height: auto;
+                padding: 3vw;
+                margin-top: 0;
+                height: 35vh;
+            }
 
-    aside .toggle .close {
-        display: inline-block;
-        cursor: pointer;
+        }
+
     }
 
 }
